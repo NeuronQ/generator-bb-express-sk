@@ -1,0 +1,24 @@
+/**
+ * The variables from here will overwrite the ones from Materialize's
+ * variables file, even if they are included *before* it, because
+ * Materialize uses !default for all variables!
+ */
+@import 'colors';
+@import 'variables';
+
+/** SASS Flex Mixins */
+@import '../node_modules/sass-flex-mixin/_flex.scss';
+
+@import 'utils/utils';
+@import 'color-themes/default';
+
+/** Materialize */
+@import 'materialize';
+
+/** App modules */
+@import 'modules/typo';
+@import 'modules/general';
+@import 'modules/header';
+@import 'modules/sidebar';
+@import 'modules/products';
+@import 'modules/footer';

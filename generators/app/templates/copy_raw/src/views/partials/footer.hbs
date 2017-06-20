@@ -1,0 +1,29 @@
+<script>
+    var DATA = {{{ dataJsonStr }}};
+</script>
+
+{{#if (eq ENV "development")}}
+    <script src="/scripts/libs/jquery.min.js"></script>
+    <script src="/scripts/libs/handlebars.runtime.min.js"></script>
+    <script src="/scripts/libs/materialize.tweaked.js"></script>
+    <script src="/scripts/main.js"></script>
+{{else}}
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/scripts/libs/all-libs.min.js"></script>
+    <script src="/scripts/all-app.min.js"></script>
+{{/if}}
+
+{{!-- handlebars templates (only require handlebars runtime to be loaded) --}}
+<script src="/scripts/common/hbs-helpers.js"></script>
+<script>
+    Object.keys(HbsHelpers).forEach(function (helperName) {
+        Handlebars.registerHelper(helperName, HbsHelpers[helperName]);
+    });
+    (function () {
+        var revive    = Handlebars.template,
+            templates = Handlebars.templates = Handlebars.templates || {};
+        {{#templates}}
+            templates['{{{name}}}'] = revive({{{template}}});
+        {{/templates}}
+    }());
+</script>

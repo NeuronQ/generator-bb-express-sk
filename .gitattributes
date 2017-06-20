@@ -1,0 +1,27 @@
+* text eol=lf
+
+# Source files
+# ============
+*.js		text
+*.html 		text
+*.py3 		text
+*.pyw 		text
+*.pyx  		text
+
+# Binary files
+# ============
+*.db		  binary
+*.pyc 		  binary
+*.pyd		  binary
+*.pyo 	      binary
+*.jpg         binary
+*.png         binary
+*.gif         binary
+*.exe         binary
+*.ttf         binary
+*.jar         binary
+*.bson        binary
+*.gz          binary
+*.zip         binary
+chromedriver        binary
+chromedriver.exe    binary

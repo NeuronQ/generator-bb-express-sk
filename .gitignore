@@ -1,0 +1,14 @@
+# Vagrant
+.vagrant/
+
+# OS crap
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.idea/
+*.sublime-*
+.vscode/
+
+# node modules
+node_modules/

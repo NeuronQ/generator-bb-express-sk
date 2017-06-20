@@ -1,0 +1,17 @@
+{
+  "name": "assets",
+  "description": "",
+  "main": "",
+  "license": "PRIVATE",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,30 @@
+/*****************************************************
+ *** Responsive sizes
+ ***
+ *** IMPORTANT: note that some Materialize js plugins have
+ *** the original values for this hardcoded inside them
+ *****************************************************/
+// Materialize breakpoints
+// $small-screen: 600px !default;
+// $small-screen-up: 601px !default;
+$medium-screen: 767px !default;
+$medium-screen-up: 768px !default;
+// $large-screen: 1200px !default;
+// $large-screen-up: 1201px !default;
+
+
+/*****************************************************
+ *** General variables
+ *****************************************************/
+$font-size: 16;
+
+$header-h: 50px;
+$header-intro-mode-h: 200px;
+
+// $sidebar-w: 300px;
+
+$big-margin: 60px;
+$std-margin: 30px;
+$mini-margin: 20px;
+$micro-margin: 15px;
+$nano-margin: 10px;
